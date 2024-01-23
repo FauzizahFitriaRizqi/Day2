@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <title>Website Profil</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('.button1').addEventListener('click', function() {
+                    document.getElementById('contentaboutme').scrollIntoView({ behavior: 'smooth' });
+                });
+                document.querySelector('.nav-about-me').addEventListener('click', function(e) {
+                e.preventDefault();
+                document.getElementById('contentaboutme').scrollIntoView({ behavior: 'smooth' });
+            });
+                document.querySelector('.nav-photos').addEventListener('click', function(e) {
+                e.preventDefault();
+                document.getElementById('contentphotos').scrollIntoView({ behavior: 'smooth' });
+            });
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="nav-about-me">About me<a></li>
+                    <li><a href="#" class="nav-photos">Photos</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <br><br><br><br><br><br><br><br>
+            <div class="container">
+                <main class="content1">
+                    <h2>HI! I'm Fauzizah</h2>
+                </main>
+            </div>
+            <div class="container">
+                <main class="content3">
+                    <p>On this website, I will present a profile about myself, a few photos, and my social media contacts. This website is part of the tasks completed before the internship begins.</p>
+                </main>
+            </div>
+            <br>
+            <div class="container">
+                <main class="content4">
+                    <a href="#"><button class="button button1">See now</button></a>
+                </main>
+            </div>
+            <div class="container">
+                <main class="content5">
+                    <a href="https://www.instagram.com/cayapataa_/"><span class="fab fa-instagram"></span></a><br>
+                    <a href="whatsapp://send?text=Hello&phone=+6285879148954"><span class="fab fa-whatsapp"></span></a><br>
+                </main>
+            </div>
+        </header>
+        <div class="container">
+            <main class="contentaboutme"  id="contentaboutme">
+                <div class="grid-container">
+                    <div class="item1">About Me</div>
+                    <div class="item2">My name is Fauzizah Fitria Rizqi. Now in my sixth semester, the academic journey in Information Systems at UPN "Veteran" Yogyakarta feels incredibly fast. As a native of Yogyakarta, this city is not just a place of study but also an integral part of my identity. Throughout my studies, I have found satisfaction in various activities, particularly in the world of organizations. One thing that deepens my connection with organizations is my tendency to become a committee member in event organization. I enjoy every moment when I have to plan, organize, and involve many people in an event. In this process, I learn a lot about time management, communication, and leadership.</div>
+                </div>
+            </main>
+        </div>
+        <div class="container">
+            <main class="contentphotos" id="contentphotos">
+                <div class="photo-grid">
+                    <div class="item1p">A collection of photos</div>
+                    <img src="gambar1.jpg" alt="Photo 1">
+                    <img src="Gambar2.jpg" alt="Photo 2">
+                    <img src="gambar3.jpg" alt="Photo 3">
+                    <img src="gambar4.jpg" alt="Photo 4">
+                    <img src="gambar5.jpg" alt="Photo 5">
+                    <img src="gambar6.jpg" alt="Photo 6">
+                    <img src="gambar7.jpg" alt="Photo 7">
+                    <img src="gambar8.jpg" alt="Photo 8">
+                </div>
+            </main>
+        </div>
+
+        <footer>
+            <p>Footer website @ 2024 Fauzizah Fitria Rizqi</p>
+        </footer>
+    </body>
+</html>
